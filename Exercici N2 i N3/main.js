@@ -25,7 +25,8 @@ $(function() {
     return this.optional(element) 
       || value.length >= 8
       && /\d/.test(value)
-      && /[a-z]/i.test(value);
+      && /[a-z]/.test(value)
+      && /[A-Z]/.test(value);
   }, 'La contraseña debe tener al menos 6 caracteres y al menos un número o una letra.')
 
   $("#myFormId").validate({
@@ -83,7 +84,7 @@ $(function() {
 		},
 		"inputPassword": {
 			required: "Aquest camp és obligatori.",
-      strongPassword: "Si us plau, no escriguis menys de 8 caracters, un número i una lletra."
+      strongPassword: "Si us plau, no escriguis menys de 8 caracters, un número i una lletra en mínuscula i un altre en majúscula."
 		},
 		"inputPassword2": {
       required: "Aquest camp és obligatori.",
