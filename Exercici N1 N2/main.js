@@ -34,7 +34,7 @@ function registerValidate() {
 
     if(inputPassword.value == "" || validar_contrasenya(inputPassword.value) !== true ){
         inputPassword.classList.add("is-invalid");
-        document.getElementById("errorPassword").textContent = "Introdueix una contrasenya vàlida";
+        document.getElementById("errorPassword").textContent = "Introdueix una contrasenya vàlida que contingui 8 caràcters, una majúsculo, una mínuscula, i un caracter especial ?!";
         acumErrores ++;
     }
 
