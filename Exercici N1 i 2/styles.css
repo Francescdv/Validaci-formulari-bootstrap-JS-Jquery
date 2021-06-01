@@ -1,0 +1,57 @@
+
+.container-main{
+    height: 100vh!important;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+
+
+.logo-bck{
+    
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+.logo-bck img{
+    align-items: center;
+    object-fit: cover;
+    height: 300px;
+   
+}
+
+label{
+    color: #3FC3E0;
+}
+
+.email{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+h1, h2{
+    margin-bottom: 30px;
+    color:  #ff3986;
+
+}
+
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited .btn-outline {
+    background-color: #ff3986 !important;
+}
+
+@media(min-width: 576px){
+
+    
+.container-main{
+
+    width: 90%;
+}
+}
