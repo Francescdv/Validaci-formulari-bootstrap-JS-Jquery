@@ -23,7 +23,7 @@ $(function() {
 
   $.validator.addMethod('strongPassword', function(value, element) {
     return this.optional(element) 
-      || value.length >= 6
+      || value.length >= 8
       && /\d/.test(value)
       && /[a-z]/i.test(value);
   }, 'La contraseña debe tener al menos 6 caracteres y al menos un número o una letra.')
