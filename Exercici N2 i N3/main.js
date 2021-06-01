@@ -83,7 +83,7 @@ $(function() {
 		},
 		"inputPassword": {
 			required: "Aquest camp és obligatori.",
-      strongPassword: "Si us plau, no escriguis menys de 6 caracters, un número i una lletra."
+      strongPassword: "Si us plau, no escriguis menys de 8 caracters, un número i una lletra."
 		},
 		"inputPassword2": {
       required: "Aquest camp és obligatori.",
