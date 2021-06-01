@@ -32,7 +32,7 @@ function registerValidate() {
     }
 
 
-    if(inputPassword.value == "") {
+    if(inputPassword.value == "" || validar_contrasenya(inputPassword.value) !== true ){
         inputPassword.classList.add("is-invalid");
         document.getElementById("errorPassword").textContent = "Introdueix una contrasenya vàlida";
         acumErrores ++;
@@ -117,6 +117,13 @@ function validar_zip(zip){
     let regex = /[0-9]/;
     return regex.test(zip);
 }
+
+function validar_contrasenya(contrasenya){
+    regex =  /(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[?!])[a-zA-Z0-9!?]{8,}/gm;
+    return regex.test(contrasenya);
+}
+
+
 
 
 

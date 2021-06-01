@@ -27,7 +27,7 @@ $(function() {
       && /\d/.test(value)
       && /[a-z]/.test(value)
       && /[A-Z]/.test(value);
-  }, 'La contraseña debe tener al menos 6 caracteres y al menos un número o una letra.')
+  }, 'La contraseña debe tener al menos 8 caracteres y al menos un número o una letra.')
 
   $("#myFormId").validate({
     rules: {
